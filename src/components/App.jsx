@@ -4,6 +4,7 @@ import Phonebook from './Phonebook/Phonebook';
 import Section from './Section/Section';
 
 const App = () => {
+  console.log(process.env.REACT_APP_TEST);
   return (
     <>
       <Section title="PhoneBook">
