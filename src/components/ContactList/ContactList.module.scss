@@ -1,0 +1,21 @@
+.contactList {
+  font-size: 24px;
+  margin-top: 25px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  & button {
+    padding: 0 10px;
+    height: 31px;
+    background: transparent;
+    transition-duration: 0.3s;
+    border-radius: 5px;
+
+    &:hover {
+      color: white;
+      background: black;
+    }
+  }
+}
