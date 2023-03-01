@@ -2,6 +2,7 @@ import { createSelector } from 'reselect';
 
 const select = {
   contacts: state => state.contacts.items,
+  isLoading: state => state.contacts.isLoading,
   filter: state => state.filter.filter,
 };
 
