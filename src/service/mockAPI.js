@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const apiKey = process.env.REACT_APP_PROJECT_TOKEN;
+const apiKey = process.env.REACT_APP_API_KEY;
 
 export const fetchContacts = async () => {
   try {
