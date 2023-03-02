@@ -4,7 +4,7 @@ import Phonebook from './Phonebook/Phonebook';
 import Section from './Section/Section';
 
 const App = () => {
-
+  console.log(process.env);
   return (
     <>
       <Section title="PhoneBook">
