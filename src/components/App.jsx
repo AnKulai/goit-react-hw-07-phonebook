@@ -6,6 +6,7 @@ import Section from './Section/Section';
 const App = () => {
   console.log(process.env.REACT_APP_TEST);
   console.log(process.env);
+  console.log(1231);
   return (
     <>
       <Section title="PhoneBook">
