@@ -12,6 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: URW Chancery L, cursive;
+  background-color: blanchedalmond;
 }
 
 code {
