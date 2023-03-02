@@ -16,6 +16,11 @@ jobs:
           npm install
           npm run lint:js
           npm run build
+      
+      - name: Set up env vars
+          env:
+           REACT_APP_API_KEY: ${{ secrets.REACT_APP_API_KEY }}
+          run: echo "REACT_APP_API_KEY=${REACT_APP_API_KEY}" > .env
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0

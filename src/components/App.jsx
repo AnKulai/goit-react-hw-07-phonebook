@@ -5,6 +5,7 @@ import Section from './Section/Section';
 
 const App = () => {
   console.log(process.env);
+  console.log(1);
   return (
     <>
       <Section title="PhoneBook">
