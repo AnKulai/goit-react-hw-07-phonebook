@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         env:
-          First_Name: REACT_APP_TEST
+          REACT_APP_TEST: REACT_APP_TEST
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
 
