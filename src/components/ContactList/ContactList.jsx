@@ -18,18 +18,24 @@ const ContactList = () => {
   }, [dispatch]);
 
   return (
-    <ol className={css.contactList}>
-      {isLoading && <Loader />}
-      {contacts.map((contact, index) => (
-        <Contact
-          key={contact.id}
-          id={contact.id}
-          name={contact.name}
-          phone={contact.phone}
-          index={++index}
-        />
-      ))}
-    </ol>
+    <>
+      {contacts.length ? (
+        <ol className={css.contactList}>
+          {isLoading && <Loader />}
+          {contacts.map((contact, index) => (
+            <Contact
+              key={contact.id}
+              id={contact.id}
+              name={contact.name}
+              phone={contact.phone}
+              index={++index}
+            />
+          ))}
+        </ol>
+      ) : (
+        <h1>Sorry... No contacts found matching search criteria...</h1>
+      )}
+    </>
   );
 };
 
