@@ -22,6 +22,4 @@ jobs:
         with:
           branch: gh-pages
           folder: build
-        env:
-          First_Name: Mona
 
